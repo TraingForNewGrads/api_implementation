@@ -1,7 +1,7 @@
-package org.example.insurance.product;
+package org.example.insurance.domain.product;
 
 
-import org.example.insurance.InsuranceProduct;
+import org.example.insurance.domain.InsuranceProduct;
 
 public class DreadDiseaseInsurance extends InsuranceProduct<DreadDiseaseInsurance.Gender> {
 

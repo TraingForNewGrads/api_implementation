@@ -1,12 +1,13 @@
 package org.example.insurance;
 
 
-import org.example.insurance.product.DreadDiseaseInsurance;
-import org.example.insurance.product.HealthInsurance;
-import org.example.insurance.product.PropertyInsurance;
+import org.example.insurance.domain.InsuranceProduct;
+import org.example.insurance.domain.product.DreadDiseaseInsurance;
+import org.example.insurance.domain.product.HealthInsurance;
+import org.example.insurance.domain.product.PropertyInsurance;
 
-import static org.example.insurance.product.DreadDiseaseInsurance.Gender.FEMALE;
-import static org.example.insurance.product.DreadDiseaseInsurance.Gender.MALE;
+import static org.example.insurance.domain.product.DreadDiseaseInsurance.Gender.FEMALE;
+import static org.example.insurance.domain.product.DreadDiseaseInsurance.Gender.MALE;
 
 public class InsuranceCalculator {
 

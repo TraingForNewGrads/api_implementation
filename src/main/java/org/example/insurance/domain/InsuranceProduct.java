@@ -1,4 +1,4 @@
-package org.example.insurance;
+package org.example.insurance.domain;
 
 public abstract class InsuranceProduct<T> {
 

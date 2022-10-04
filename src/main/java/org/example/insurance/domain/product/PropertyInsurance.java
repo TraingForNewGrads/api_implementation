@@ -1,6 +1,6 @@
-package org.example.insurance.product;
+package org.example.insurance.domain.product;
 
-import org.example.insurance.InsuranceProduct;
+import org.example.insurance.domain.InsuranceProduct;
 
 import java.math.BigDecimal;
 
