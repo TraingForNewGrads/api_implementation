@@ -21,6 +21,12 @@ public class HealthInsuranceController {
     @PostMapping(consumes = APPLICATION_JSON_VALUE)
     public ResponseEntity<?> post(@RequestBody CalculateHealthRequest data, UriComponentsBuilder uriComponentsBuilder) {
         HealthInsurance healthInsurance = new HealthInsurance();
-        return ResponseEntity.ok().body(new InsuranceDto(healthInsurance.calculate(data.age)));
+        double totalAmount;
+        try {
+            totalAmount = healthInsurance.calculate(data.age);
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+        return ResponseEntity.ok().body(new InsuranceDto(totalAmount));
     }
 }
