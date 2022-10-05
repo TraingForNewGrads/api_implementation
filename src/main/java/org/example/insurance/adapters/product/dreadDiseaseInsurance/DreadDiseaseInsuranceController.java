@@ -18,7 +18,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @RequestMapping(value = "/dread-disease-insurance", produces = APPLICATION_JSON_VALUE)
 public class DreadDiseaseInsuranceController {
     @PostMapping(consumes = APPLICATION_JSON_VALUE)
-    public ResponseEntity<?> post(@RequestBody CalculateDreadDiseaseRequest data, UriComponentsBuilder uriComponentsBuilder) {
+    public ResponseEntity<?> post(@RequestBody CalculateDreadDiseaseRequest data) {
         DreadDiseaseInsurance dreadDiseaseInsurance = new DreadDiseaseInsurance();
         Gender gender;
         if(Objects.equals(data.gender, "male")) {
